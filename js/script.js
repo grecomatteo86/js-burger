@@ -41,7 +41,12 @@ calcolo.addEventListener('click',
       var coupon = document.getElementById('coupon');
       if ( coupons.includes(coupon.value) ) {
         somma -= somma * 0.2;
-
+        /* 9. se mi voglio andare a togliere il coupun utizzato dall'utente:
+        devo prima andare a procurarmi il suo indice e salvarlo in una var;
+        poi utilizzare splice per rimuoverlo dall'array*/
+        var indexCoupon = coupons.indexOf(coupon.value);
+        coupons.splice(indexCoupon, 1);
+        console.log(coupons); //per andare a vedere i coupons che mi rimangono
       }
       /* console.log(somma);
       6. stampa del risultato nella pagina:
