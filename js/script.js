@@ -26,12 +26,16 @@ calcolo.addEventListener('click',
       e lo vado a ciclare*/
       var aggiuntaIngrediente = document.getElementsByClassName('aggiunta_ingrediente');
       console.log(aggiuntaIngrediente);
+      var somma = 50;
       for ( var i = 0; i < aggiuntaIngrediente.length; i++) {
-        
+        //6. se l'ingrediente è checkato, prendo il suo value e lo vado a sommare al costo del panino
+        if (aggiuntaIngrediente[i].checked) {
+          somma += parseInt(aggiuntaIngrediente[i].value); //value restitutisce una stringa, ecco perche richiede il parseInt
 
         }
 
       }
+      console.log(somma);
     } else {
       alert('inserisci il nome del panino');
     }
