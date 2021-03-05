@@ -18,7 +18,20 @@ calcolo.addEventListener('click',
     se il valore del nome_panino è diverso da una stringa vuota allora voglio vederne il valore;
     altrimenti compare un messaggio che mi chiede di inserire il nome del panino*/
     if (nomePanino.value != '') {
-      console.log(nomePanino.value);
+      /* console.log(nomePanino.value);
+      5. ad ogni click devo andare a scorrere tutte le checkbox
+      per vedere se sono checkate o no;
+      per far questo vado a prendere tutte le checkbox attraverso la classe
+      mi faccio restituire l'array
+      e lo vado a ciclare*/
+      var aggiuntaIngrediente = document.getElementsByClassName('aggiunta_ingrediente');
+      console.log(aggiuntaIngrediente);
+      for ( var i = 0; i < aggiuntaIngrediente.length; i++) {
+        
+
+        }
+
+      }
     } else {
       alert('inserisci il nome del panino');
     }
