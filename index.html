@@ -24,66 +24,87 @@
 
     <main>
 
-      <input type="text" name="" value="" placeholder="name your burger">
+      <div class="contenitore_input">
 
-      <h2>Ingredienti</h2>
-
-      <ul class="lista_aggiunte">
-
-        <li>
-          <label for="Formaggio">Formaggio</label>
-          <input type="checkbox" name="formaggio" value="5">
-        </li>
-
-        <li>
-          <label for="Uova">Uova</label>
-          <input type="checkbox" name="uova" value="5">
-        </li>
-
-        <li>
-          <label for="Mostarda">Mostarda</label>
-          <input type="checkbox" name="mostarda" value="2">
-        </li>
-
-        <li>
-          <label for="Pomodoro">Pomodoro</label>
-          <input type="checkbox" name="pomodoro" value="3">
-        </li>
-
-        <li>
-          <label for="Lattuga">Lattuga</label>
-          <input type="checkbox" name="lattuga" value="3">
-        </li>
-
-        <li>
-          <label for="Ketchup">Ketchup</label>
-          <input type="checkbox" name="ketchup" value="2">
-        </li>
-
-      </ul>
-
-      <div class="sezione_coupon">
-
-        <p>Riscatta il tuo Coupon</p>
-
-        <input type="text" name="coupon" value="" placeholder="inserisci il tuo coupon">
+        <input id="nome_panino" type="text" name="" value="" placeholder="dai un nome al tuo panino">
 
       </div>
 
-      <button type="button" name="button">Calcola</button>
+
+      <div class="contenitore_ingredienti">
+
+        <h2>Ingredienti</h2>
+
+        <ul class="lista_aggiunte">
+
+          <li>
+            <label for="Formaggio"> Formaggio
+              <input id="formaggio" type="checkbox" name="formaggio" value="5"> Aggiungi
+            </label>
+          </li>
+
+          <li>
+            <label for="Uova"> Uova
+              <input id="uova" type="checkbox" name="uova" value="5"> Aggiungi
+            </label>
+          </li>
+
+          <li>
+            <label for="Mostarda"> Mostarda
+              <input id="mostarda" type="checkbox" name="mostarda" value="2"> Aggiungi
+            </label>
+          </li>
+
+          <li>
+            <label for="Pomodoro"> Pomodoro
+              <input id="pomodoro" type="checkbox" name="pomodoro" value="3"> Aggiungi
+            </label>
+          </li>
+
+          <li>
+            <label for="Lattuga"> Lattuga
+              <input id="lattuga" type="checkbox" name="lattuga" value="3"> Aggiungi
+            </label>
+          </li>
+
+          <li>
+            <label for="Ketchup"> Ketchup
+              <input id="ketchup" type="checkbox" name="ketchup" value="2"> Aggiungi
+            </label>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="contenitore_coupon">
+
+        <label for="coupon">Riscatta il tuo coupon</label>
+
+        <input id="coupon" type="text" name="coupon" value="" placeholder="inserisci il tuo coupon">
+
+      </div>
+
+
+      <div class="contenitore_bottone">
+
+        <button id="calcola" type="button" name="button">Calcola</button>
+
+      </div>
 
     </main>
 
 
     <footer>
 
-      <div class="prezzo_totale">
+      <div class="stringa_sx">
 
         <h2>Totale da pagare</h2>
 
       </div>
 
-      <div class="cifra_totale">
+      <div id="cifra_totale">
 
         <p>50€</p>
 
