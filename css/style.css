@@ -1,0 +1,22 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(255, 245, 227);
+}
+
+.contenitore{
+  max-width: 600px;
+  background-color: #fff;
+}
+
+header{
+  background-color: rgb(228, 169, 70);
+}
+
+footer{
+  background-color: rgb(209, 54, 91);
+}
