@@ -1,6 +1,8 @@
 // 1. definisco le variabili che andremop ad utilizzare nel nostro programma
 var calcolo = document.getElementById('calcola');
 // console.log(calcolo);
+/* 7. vado a controllare i coupons: creo un array */
+var coupons = ['1234','2341','3412','4123'];
 
 //2. aggiungo l'evento al click del bottone
 calcolo.addEventListener('click',
@@ -33,8 +35,17 @@ calcolo.addEventListener('click',
           somma += parseInt(aggiuntaIngrediente[i].value); //value restitutisce una stringa, ecco perche richiede il parseInt
         }
       }
+      /* 8. applico l'eventuale sconto:
+      vado a leggere quello che scrive l'utente a riga 85 dell'html e lo salvo in una var
+      e faccio il controllo: se l'array include il value inserito dall'utente, applico il 20% di sconto */
+      var coupon = document.getElementById('coupon');
+      if ( coupons.includes(coupon.value) ) {
+        somma -= somma * 0.2;
+
+      }
       /* console.log(somma);
-      6. vado ad inserire la variabile somma nell'html */
+      6. stampa del risultato nella pagina:
+      vado ad inserire la variabile somma nell'html */
       document.getElementById('cifra_totale').innerHTML= somma + ' €';
     } else {
       alert('inserisci il nome del panino');
