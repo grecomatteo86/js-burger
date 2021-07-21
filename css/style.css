@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+.txt_cnt{
+  text-align: center;
+}
 body{
   font-family: 'Lato', sans-serif;
   height: 100vh;
@@ -14,33 +17,79 @@ body{
   background-position:center;
 }
 .banner{
-  width: 400px;
+  width: 500px;
 }
 h1{
   font-size: 40px;
   padding-bottom: 15px;
 }
-
 .banner h2{
   padding-bottom: 20px;
 }
 .container{
-  width: 300px;
+  width: 500px;
 }
-
-
-header{
+header, footer{
   background-color: rgb(228, 169, 70);
+  height: 70px;
+  margin: 5px 0;
+}
+header{
+  border-radius: 20px 20px 0 0;
+}
+header h2{
+  font-size: 50px;
 }
 main{
-  background-color: rgb(120, 160, 90);
+  background-color: rgb(97, 40, 22);
+  border-radius: 20px;
+  padding: 20px 0;
+}
+.wrapper{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.input_container input,
+.coupon_container input{
+  background-color: transparent;
+  border: none;
+}
+.input_container input:focus{
+  outline: none;
 }
 ul li{
   list-style: none;
+  color: rgb(135, 156, 35);
+  padding: 5px 0;
+}
+.ingredients_container li input{
+  margin: 0 10px;
+}
+.coupon_container{
+  padding-bottom: 20px;
+}
+.coupon_container label{
+  margin-right: 15px;
+}
+.coupon_container input::placeholder{
+  text-align: center;
+}
+.button_container button{
+  border: 1px solid rgb(135, 156, 35);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+}
+.ingredients_container h2,
+.coupon_container label,
+.button_container button{
+  color: rgba(236, 182, 137);
 }
 footer{
-  background-color: rgb(209, 54, 91);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  border-radius: 0 0 20px 20px;
 }

@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
   <title>Burger Creator</title>
 </head>
@@ -22,92 +23,100 @@
 
   </div>
 
-  <div class="container">
+  <div class="container txt_cnt">
     <header>
       <h2>Create your Burger</h2>
     </header>
     <main>
 
-      <div class="input_container">
+      <div class="wrapper">
 
-        <input id="burger_name" type="text" name="" value="" placeholder="Name your Burger">
+        <div class="input_container">
+
+          <input id="burger_name" type="text" name="" value="" placeholder="Name your Burger">
+
+        </div>
+
+        <div class="ingredients_container">
+
+          <h2>Ingredients</h2>
+
+          <ul class="ingredients_list">
+
+            <li>
+
+              <label for="cheese">Cheese
+
+                <input id="cheese" class="added_ingredient" type="checkbox" name="cheese" value="5">Add
+
+              </label>
+
+            </li>
+
+            <li>
+
+              <label for="egg">Egg
+
+                <input id="egg" class="added_ingredient" type="checkbox" name="egg" value="5">Add
+
+              </label>
+
+            </li>
+
+            <li>
+
+              <label for="mustard">Mustard
+
+                <input id="mustard" class="added_ingredient" type="checkbox" name="mustard" value="2">Add
+
+              </label>
+
+            </li>
+
+            <li>
+
+              <label for="tomato">Tomato
+
+                <input id="tomato" class="added_ingredient" type="checkbox" name="tomato" value="3">Add
+
+              </label>
+
+            </li>
+
+            <li>
+
+              <label for="lattuce">Lattuce
+
+                <input id="lattuce" class="added_ingredient" type="checkbox" name="lattuce" value="3">Add
+
+              </label>
+
+            </li>
+
+            <li>
+
+              <label for="ketchup">Ketchup
+
+                <input id="ketchup" class="added_ingredient" type="checkbox" name="ketchup" value="2">Add
+
+              </label>
+
+            </li>
+
+          </ul>
+
+        </div>
 
       </div>
 
-      <div class="ingredients_container">
 
-        <h2>Ingredients</h2>
-
-        <ul class="ingredients_list">
-
-          <li>
-
-            <label for="cheese">Cheese
-
-              <input id="cheese" class="added_ingredient" type="checkbox" name="cheese" value="5">Add
-
-            </label>
-
-          </li>
-
-          <li>
-
-            <label for="egg">Egg
-
-              <input id="egg" class="added_ingredient" type="checkbox" name="egg" value="5">Add
-
-            </label>
-
-          </li>
-
-          <li>
-
-            <label for="mustard">Mustard
-
-              <input id="mustard" class="added_ingredient" type="checkbox" name="mustard" value="2">Add
-
-            </label>
-
-          </li>
-
-          <li>
-
-            <label for="tomato">Tomato
-
-              <input id="tomato" class="added_ingredient" type="checkbox" name="tomato" value="3">Add
-
-            </label>
-
-          </li>
-
-          <li>
-
-            <label for="lattuce">Lattuce
-
-              <input id="lattuce" class="added_ingredient" type="checkbox" name="lattuce" value="3">Add
-
-            </label>
-
-          </li>
-
-          <li>
-
-            <label for="ketchup">Ketchup
-
-              <input id="ketchup" class="added_ingredient" type="checkbox" name="ketchup" value="2">Add
-
-            </label>
-
-          </li>
-
-        </ul>
-
-      </div>
 
       <div class="coupon_container">
 
-        <label for="coupon">Get your coupon</label>
+        <label for="coupon">Get your discaunt</label>
+        <i class="fas fa-ticket-alt"></i>
         <input id="coupon" type="text" name="coupon" value="" placeholder="insert your coupon">
+        <i class="fas fa-ticket-alt"></i>
 
       </div>
 
