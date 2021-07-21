@@ -3,20 +3,30 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body{
   background-color: rgb(255, 245, 227);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.contenitore{
-  max-width: 600px;
+.wrapper{
+}
+.container{
+  width: 300px;
+}
+/* .contenitore{
+  width: 300px;
+  height: 500px;
   background-color: #fff;
-}
+} */
 
 header{
   background-color: rgb(228, 169, 70);
 }
-
+main{
+  background-color: rgb(120, 160, 90);
+}
 footer{
   background-color: rgb(209, 54, 91);
 }
